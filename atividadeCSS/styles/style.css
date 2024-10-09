@@ -11,7 +11,7 @@ body {
 
 :root {
     --tamanho-header: 80px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 20px);
     --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
     --tamanho-footer: 65px;
 }
@@ -36,7 +36,7 @@ body {
 
 .header a {
     text-decoration: none;
-    color: #e3b062;
+    color:white;
 }
 
 .agora {
@@ -66,7 +66,6 @@ body {
     background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
     background-size: cover;
 }
-
 .banner .container {
     justify-content: center;
     align-items: center;
@@ -77,10 +76,34 @@ body {
     width: 50%;
     margin: 0;
     padding: 0;
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .banner .container span {
+    font-weight: 800;
+}
+
+.bannerIndex {
+    height: 150px;
+    color: white;
+    background-image: url(../assets/imgs/bg-jelly-fish-para-home.png);
+    background-size: cover;
+}
+.bannerIndex .container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.bannerIndex .container p {
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+}
+
+.bannerIndex .container span {
     font-weight: 800;
 }
 
@@ -90,31 +113,34 @@ body {
     background-color: #e5e5e5;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: column;
+    height: 700px;
 }
 
 .social .container .boxes {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 30px 0;
+    width: 80%;
+    padding: 0px 220px;
+    flex-direction: column;
 }
 
 .box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    text-align: center;
 }
 
 .box img {
-    width: 170px;
+    width: 150px;
 }
 
 /*FOOTER*/
 
 .footer {
     background-color: #32b0cd;
-    height: 150px;
+    height: 130px;
     color: #fff;
     display: flex;
     font-size: 15px;
@@ -127,6 +153,8 @@ body {
 
 .version {
     font-size: 12px;
+    display: flex;
+    align-self: flex-start;
 }
 
 .card-login {
